@@ -3,7 +3,7 @@ import telebot
 import threading
 
 # إعداد توكن البوت الخاص بك
-TOKEN = '7287328621:AAGunduTgsqErYliEuZcWtIFNYYDHUsqWNs'
+TOKEN = '7619304970:AAFfQntdcEMdhFWAYMRZt8KrbNEbJP-I14g'
 bot = telebot.TeleBot(TOKEN)
 
 # رابط الملف الذي تريد تحميله من Gist
