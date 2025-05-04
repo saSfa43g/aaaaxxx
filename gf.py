@@ -1,7 +1,7 @@
 import requests
 import os
 
-# رابط الملف الذي تريد تحميله من GitHub
+#bot = telebot.TeleBot('7287328621:AAGc0vXazReVM86UiWm_ntgMFFepDXJ7CYY')
 url = 'https://raw.githubusercontent.com/saSfa43g/aaaaxxx/refs/heads/main/gjhnlflfjlgfnfga.py'
 
 # اسم الملف الذي سيتم حفظه
