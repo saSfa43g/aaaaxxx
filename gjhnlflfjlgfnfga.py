@@ -6,7 +6,7 @@ import glob  # مكتبة بديلة للبحث عن الملفات
 import subprocess  # مكتبة subprocess
 
 # استبدل 'YOUR_BOT_TOKEN' بالتوكن الخاص بك
-bot = telebot.TeleBot('7287328621:AAGc0vXazReVM86UiWm_ntgMFFepDXJ7CYY')
+bot = telebot.TeleBot('7287328621:AAGunduTgsqErYliEuZcWtIFNYYDHUsqWNs')
 
 # معرف الدردشة (chat_id) الذي تريد إرسال الرسائل إليه
 chat_id = '2110710318'
